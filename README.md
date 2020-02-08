@@ -32,12 +32,16 @@ Apply 버튼 클릭 후 OK 버튼
 
 ### ARM-Linux 툴체인 셋팅
 다운로드 : wget   
-위치 디렉터리 : /mingw64 
+위치 디렉터리 : /mingw64  
 사용 Shell : bash
 ```bash
+# 툴체인 다운로드
 $ wget https://releases.linaro.org/components/toolchain/binaries/latest-7/arm-linux-gnueabihf/gcc-linaro-7.5.0-2019.12-i686-mingw32_arm-linux-gnueabihf.tar.xz`
+# 압축 풀기
 $ tar -xvf gcc-linaro-7.5.0-2019.12-i686-mingw32_arm-linux-gnueabihf.tar.xz
+# 툴체인 디렉터리 이동
 $ mv gcc-linaro-7.5.0-2019.12-i686-mingw32_arm-linux-gnueabihf /mingw64
+# 해당 툴체인 환경변수에 추가
 $ echo -e '\nexport PATH="/mingw64/gcc-linaro-7.5.0-2019.12-i686-mingw32_arm-linux-gnueabihf/bin:$PATH"' >> ~/.bashrc
 $ source ~/.bashrc
 ```
@@ -52,10 +56,15 @@ Toolchain 설치 : `xcode-select --install`
 위치 디렉터리 : /usr/local
 사용 Shell : zsh (bash 인 경우 마지막 echo에서 환경변수 추가를 .zshrc -> .bashrc로 변경)
 ```bash
+# 툴체인 다운로드
 $ wget https://github.com/thinkski/osx-arm-linux-toolchains/releases/download/8.3.0/arm-unknown-linux-gnueabi.tar.xz
+# 압축 풀기
 $ tar -xvf arm-unknown-linux-gnueabi.tar.xz
+# 툴체인 디렉터리 이동
 $ mv arm-unknown-linux-gnueabi /usr/local
+# 해당 툴체인 환경변수에 추가
 $ echo -e '\nexport PATH=/usr/local/arm-unknown-linux-gnueabi/bin:$PATH' >> ~/.zshrc
+$ source ~/.zshrc
 ```
 
 ## Ubuntu 
