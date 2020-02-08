@@ -17,6 +17,11 @@ scoop을 사용하여 설치 : `scoop install msys2`
 * MSYS2 터미널 실행
 * MSYS2의 패키지 관리자 <b>pacman</b>을 통하여 설치 : `pacman -S mingw-w64-x86_64-toolchain`   
 참조사이트 : [링크](https://stackoverflow.com/questions/36375081/how-to-run-clion-with-msys2-on-windows)
+```bash
+# 해당 툴체인 환경변수에 추가
+$ echo -e '\nexport PATH="/mingw64/bin:$PATH"' >> ~/.bashrc
+$ source ~/.bashrc
+```
 * 설치 확인 : `gcc -v`
 
 <b>make</b>   
@@ -47,13 +52,13 @@ $ source ~/.bashrc
 ```
 
 ## macOS
-### 개발 환경 셋팅
-Toolchain 설치 : `xcode-select --install`
+### CLion/CMake 개발 환경 셋팅
+Toolchain 설치 : `xcode-select --install`   
 설치 확인 : `gcc -v`
 
 ### ARM-Linux 툴체인 셋팅
 다운로드 : wget   
-위치 디렉터리 : /usr/local
+위치 디렉터리 : /usr/local   
 사용 Shell : zsh (bash 인 경우 마지막 echo에서 환경변수 추가를 .zshrc -> .bashrc로 변경)
 ```bash
 # 툴체인 다운로드
@@ -68,12 +73,12 @@ $ source ~/.zshrc
 ```
 
 ## Ubuntu 
-### 개발 환경 셋팅
+### CLion/CMake 개발 환경 셋팅
 Toolchain 설치 : `sudo apt-get install -y gcc g++ make`
 설치 확인 : `gcc -v`
 
 ### ARM-Linux 툴체인 셋팅
 다운로드 : apt-get   
 위치 디렉터리 : /usr
-`sudo apt-get install -y gcc-arm-linux-gnueabi g++-arm-linux-gnueabi` 
+`sudo apt-get install -y gcc-arm-linux-gnueabi g++-arm-linux-gnueabi`    
 참고 사이트 : [링크](https://blog.thinkbee.kr/linux/crosscompile-arm/)
