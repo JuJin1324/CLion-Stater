@@ -41,13 +41,13 @@ Apply 버튼 클릭 후 OK 버튼
 사용 Shell : bash
 ```bash
 # 툴체인 다운로드
-$ wget https://releases.linaro.org/components/toolchain/binaries/latest-7/arm-linux-gnueabihf/gcc-linaro-7.5.0-2019.12-i686-mingw32_arm-linux-gnueabihf.tar.xz`
+$ wget https://developer.arm.com/-/media/Files/downloads/gnu-a/9.2-2019.12/binrel/gcc-arm-9.2-2019.12-mingw-w64-i686-arm-none-linux-gnueabihf.tar.xz
 # 압축 풀기
-$ tar -xvf gcc-linaro-7.5.0-2019.12-i686-mingw32_arm-linux-gnueabihf.tar.xz
+$ tar -xvf gcc-arm-9.2-2019.12-mingw-w64-i686-arm-none-linux-gnueabihf.tar.xz
 # 툴체인 디렉터리 이동
-$ mv gcc-linaro-7.5.0-2019.12-i686-mingw32_arm-linux-gnueabihf /mingw64
+$ mv gcc-arm-9.2-2019.12-mingw-w64-i686-arm-none-linux-gnueabihf /mingw64
 # 해당 툴체인 환경변수에 추가
-$ echo -e '\nexport PATH="/mingw64/gcc-linaro-7.5.0-2019.12-i686-mingw32_arm-linux-gnueabihf/bin:$PATH"' >> ~/.bashrc
+$ echo -e '\nexport PATH="/mingw64/gcc-arm-9.2-2019.12-mingw-w64-i686-arm-none-linux-gnueabihf/bin:$PATH"' >> ~/.bashrc
 $ source ~/.bashrc
 ```
 
