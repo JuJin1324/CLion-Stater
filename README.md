@@ -79,6 +79,6 @@ Toolchain 설치 : `sudo apt-get install -y gcc g++ make`
 
 ### ARM-Linux 툴체인 셋팅
 다운로드 : apt-get   
-위치 디렉터리 : /usr
+위치 디렉터리 : /usr   
 `sudo apt-get install -y gcc-arm-linux-gnueabi g++-arm-linux-gnueabi`    
 참고 사이트 : [링크](https://blog.thinkbee.kr/linux/crosscompile-arm/)
