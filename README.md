@@ -38,9 +38,11 @@ Apply 버튼 클릭 후 OK 버튼
 ## macOS
 ### CLion/CMake 개발 환경 셋팅
 Toolchain 설치 : `xcode-select --install`   
+
 설치 확인 : `gcc -v`
 
 ## Ubuntu 
 ### CLion/CMake 개발 환경 셋팅
 Toolchain 설치 : `sudo apt-get install -y gcc g++ make`
+
 설치 확인 : `gcc -v`
