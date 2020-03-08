@@ -1,4 +1,4 @@
-# CLion-starter
+# CLion-Starter
 CMake 및 C언어를 사용하는 IDE인 CLion의 처음 사용을 위한 프로젝트
 
 ## Microsoft Windows
